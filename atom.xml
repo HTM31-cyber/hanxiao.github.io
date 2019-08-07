@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Han Xiao Tech Blog - Deep Learning, NLP, AI</title>
+  <icon>https://www.gravatar.com/avatar/4c2f23c2a19e55a6682ad6b3b7216ccf</icon>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://hanxiao.github.io/"/>
+  <updated>2019-08-07T12:03:45.000Z</updated>
+  <id>https://hanxiao.github.io/</id>
+  
+  <author>
+    <name>Han Xiao</name>
+    <email>artex.xh@gmail.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Generic Neural Elastic Search: From &lt;code&gt;bert-as-service&lt;/code&gt; and Go Way Beyond</title>
+    <link href="https://hanxiao.github.io/2019/07/29/Generic-Neural-Elastic-Search-From-bert-as-service-and-Go-Way-Beyond/"/>
+    <id>https://hanxiao.github.io/2019/07/29/Generic-Neural-Elastic-Search-From-bert-as-service-and-Go-Way-Beyond/</id>
+    <published>2019-07-29T12:38:44.000Z</published>
+    <updated>2019-08-07T12:03:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background&quot;&gt;&lt;/a&gt;Background&lt;/h2&gt;&lt;p&gt;Since Jan. 2019, I have started leading a team at Tencent AI Lab and working on a new system &lt;strong&gt;GNES (Generic Neural Elastic Search)&lt;/strong&gt;. GNES is an open-source cloud-native semantic search solution based on deep neural network.
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Serving Google BERT in Production using Tensorflow and ZeroMQ</title>
+    <link href="https://hanxiao.github.io/2019/01/02/Serving-Google-BERT-in-Production-using-Tensorflow-and-ZeroMQ/"/>
+    <id>https://hanxiao.github.io/2019/01/02/Serving-Google-BERT-in-Production-using-Tensorflow-and-ZeroMQ/</id>
+    <published>2019-01-02T14:35:03.000Z</published>
+    <updated>2019-08-07T12:03:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;quiz&quot;&gt;&lt;br&gt;This is a post explaining the design philosphy behind my open-source project &lt;a href=&quot;https://github.com/hanxiao/bert-as-service&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;code&gt;bert-as-service&lt;/code&gt;&lt;/a&gt;, a highly-scalable sentence encoding service based on Google BERT and ZeroMQ. It allows one to map a variable-length sentence to a fixed-length vector. In case you haven’t checked it out yet, &lt;a href=&quot;https://github.com/hanxiao/bert-as-service&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/hanxiao/bert-as-service&lt;/a&gt;&lt;br&gt;&lt;/div&gt;&lt;h2 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background&quot;&gt;&lt;/a&gt;Background&lt;/h2&gt;&lt;p&gt;When we look back at 2018, one of the biggest news in the world of ML and NLP is Google’s &lt;a href=&quot;https://arxiv.org/abs/1810.04805&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Bidirectional Encoder Representations from Transformers&lt;/a&gt;, aka BERT. BERT is a method of pre-training language representations which achieves not only state-of-the-art but &lt;em&gt;record-breaking&lt;/em&gt; results on a wide array of NLP tasks, such as &lt;a href=&quot;/2018/04/21/Teach-Machine-to-Comprehend-Text-and-Answer-Question-with-Tensorflow/&quot; title=&quot;machine reading comprehension&quot;&gt;machine reading comprehension&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;To my team at Tencent AI Lab, BERT is particularly interesting as it provides a novel way to represent the semantic of text using real-valued fixed-length vectors. For many real-world NLP/AI applications that we are working on, an effective vector representation is the cornerstone. For example in the neural information retrieval, query and document need to be mapped to the same vector space, so that their relatedness can be computed using a metric defined in this space, e.g. Euclidean or cosine distance. The effectiveness of the representation directly determines the quality of the search.&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Fashion-MNIST: Year In Review</title>
+    <link href="https://hanxiao.github.io/2018/09/28/Fashion-MNIST-Year-In-Review/"/>
+    <id>https://hanxiao.github.io/2018/09/28/Fashion-MNIST-Year-In-Review/</id>
+    <published>2018-09-28T06:01:41.000Z</published>
+    <updated>2019-08-07T12:03:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;It’s been one year since I released &lt;a href=&quot;https://github.com/zalandoresearch/fashion-mnist&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;the Fashion-MNIST dataset&lt;/a&gt; in Aug. 2017. As I wrote in the &lt;a href=&quot;https://github.com/zalandoresearch/fashion-mnist&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;code&gt;README.md&lt;/code&gt;&lt;/a&gt;, Fashion-MNIST is intended to serve as a &lt;em&gt;drop-in replacement&lt;/em&gt; for the original MNIST dataset, helping people to benchmark and understand machine learning algorithms. Over a year, I have seen a great deal of trends and developments in the machine learning
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Machine Reading Comprehension Part II: Learning to Ask &amp; Answer</title>
+    <link href="https://hanxiao.github.io/2018/09/09/Dual-Ask-Answer-Network-for-Machine-Reading-Comprehension/"/>
+    <id>https://hanxiao.github.io/2018/09/09/Dual-Ask-Answer-Network-for-Machine-Reading-Comprehension/</id>
+    <published>2018-09-09T12:11:58.000Z</published>
+    <updated>2019-08-07T12:03:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Recap&quot;&gt;&lt;a href=&quot;#Recap&quot; class=&quot;headerlink&quot; title=&quot;Recap&quot;&gt;&lt;/a&gt;Recap&lt;/h2&gt;&lt;p&gt;In &lt;a href=&quot;/2018/04/21/Teach-Machine-to-Comprehend-Text-and-Answer-Question-with-Tensorflow/&quot; title=&quot;the last post of this series&quot;&gt;the last post of this series&lt;/a&gt;, I have introduced the task of machine reading comprehension (MRC) and presented a simple neural architecture for tackling such task. In fact, this architecture can be found in many state-of-the-art MRC models, e.g. BiDAF, S-Net, R-Net, match-LSTM, ReasonNet, Document Reader, Reinforced Mnemonic Reader, FusionNet and QANet.&lt;/p&gt;&lt;p&gt;I also pointed out an assumption made in this architecture: the answer is always a continuous span of a given passage. Under this assumption, an answer can be simplified as a pair of two integers, representing its start and end position
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>德国人工智能对比中国人工智能：大学、产业及规划</title>
+    <link href="https://hanxiao.github.io/2018/08/25/%E8%B0%88%E6%83%85%E8%AF%B4-AI-%E8%AE%BF%E5%BE%B7%E4%B8%AD%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%8D%8F%E4%BC%9A%E4%B8%BB%E5%B8%AD%E8%82%96%E6%B6%B5%E5%8D%9A%E5%A3%AB/"/>
+    <id>https://hanxiao.github.io/2018/08/25/谈情说-AI-访德中人工智能协会主席肖涵博士/</id>
+    <published>2018-08-25T19:32:57.000Z</published>
+    <updated>2019-08-07T12:03:46.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;div class=&quot;remind&quot;&gt;&lt;br&gt;This is an interview I received from &lt;a href=&quot;https://www.dialogde.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;DialogDE&lt;/a&gt;, a Chinese media focusing on culture exchange between Germany and China. In this interview, I shared my nine-year study &amp;amp; work experience on AI in Germany; compared German AI and Chinese AI industry &amp;amp; development; interpreted the tech and academic culture of two countries; and explained my mission at German-Chinese Association for Artificial Intelligence.
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>4 Sequence Encoding Blocks You Must Know Besides RNN/LSTM in Tensorflow</title>
+    <link href="https://hanxiao.github.io/2018/06/24/4-Encoding-Blocks-You-Need-to-Know-Besides-LSTM-RNN-in-Tensorflow/"/>
+    <id>https://hanxiao.github.io/2018/06/24/4-Encoding-Blocks-You-Need-to-Know-Besides-LSTM-RNN-in-Tensorflow/</id>
+    <published>2018-06-24T16:19:00.000Z</published>
+    <updated>2019-08-07T12:03:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background&quot;&gt;&lt;/a&gt;Background&lt;/h2&gt;&lt;p&gt;Understanding human language is a challenging task for computers, as they were originally designed for crunching numbers. To let computers comprehend text as humans do, one needs to encode the complexities and nuances of natural language into numbers. For many years, &lt;a href=&quot;https://en.wikipedia.org/wiki/Recurrent_neural_network&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;recurrent neural networks (RNN)&lt;/a&gt; or &lt;a href=&quot;https://en.wikipedia.org/wiki/Long_short-term_memory&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;long-short term memory (LSTM)&lt;/a&gt; was the way to solve sequence encoding problem. They have indeed accomplished amazing results in many applications, e.g. machine translation and voice recognition. As for me, they were the first solution that comes to my mind when facing an NLP problem. You can find my previous posts about RNN/LSTM in Tensorflow &lt;a href=&quot;https://hanxiao.github.io/2018/04/21/Teach-Machine-to-Comprehend-Text-and-Answer-Question-with-Tensorflow/&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;https://hanxiao.github.io/2018/01/10/Build-Cross-Lingual-End-to-End-Product-Search-using-Tensorflow/&quot;&gt;here&lt;/a&gt;, &lt;a href=&quot;https://hanxiao.github.io/2017/08/16/Why-I-use-raw-rnn-Instead-of-dynamic-rnn-in-Tensorflow-So-Should-You-0/&quot;&gt;and here&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Now at Tencent AI Lab, however, I’m &lt;em&gt;sunsetting&lt;/em&gt; RNN/LSTM in my team. Why? Because they are &lt;strong&gt;computationally expensive&lt;/strong&gt;, aka slow! The recursive nature
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Teach Machine to Comprehend Text and Answer Question with Tensorflow - Part I</title>
+    <link href="https://hanxiao.github.io/2018/04/21/Teach-Machine-to-Comprehend-Text-and-Answer-Question-with-Tensorflow/"/>
+    <id>https://hanxiao.github.io/2018/04/21/Teach-Machine-to-Comprehend-Text-and-Answer-Question-with-Tensorflow/</id>
+    <published>2018-04-21T08:03:42.000Z</published>
+    <updated>2019-08-07T12:03:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background&quot;&gt;&lt;/a&gt;Background&lt;/h2&gt;&lt;div class=&quot;tip&quot;&gt;&lt;br&gt;The &lt;a href=&quot;/2018/09/09/Dual-Ask-Answer-Network-for-Machine-Reading-Comprehension/&quot; title=&quot;part II of this series&quot;&gt;part II of this series&lt;/a&gt; is avaliable now, in which I present a unified model for asking &lt;em&gt;and&lt;/em&gt; answering!&lt;br&gt;&lt;/div&gt;&lt;p&gt;Reading comprehension is one of the fundamental skills for human, which one must learn systematically since the elementary school. Do you still remember how the worksheet of your reading class looks like? It usually consists of an article and few questions about its content. To answer these questions, you need to first gather information by collecting answer-related sentences from the article. Sometimes you can directly copy those original sentences from the article as the final answer. This is a trivial “gut question”, and every student likes it. Unfortunately (for students), quite often you need to summarize, assert, infer, refine those evidences and finally write the answer in your own words. Drawing inferences about the writer’s intention is especially hard. Back in
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Building Cross-Lingual End-to-End Product Search with Tensorflow</title>
+    <link href="https://hanxiao.github.io/2018/01/10/Build-Cross-Lingual-End-to-End-Product-Search-using-Tensorflow/"/>
+    <id>https://hanxiao.github.io/2018/01/10/Build-Cross-Lingual-End-to-End-Product-Search-using-Tensorflow/</id>
+    <published>2018-01-10T15:24:06.000Z</published>
+    <updated>2019-08-07T12:03:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background&quot;&gt;&lt;/a&gt;Background&lt;/h2&gt;&lt;p&gt;Product search is one of the key components in an online retail store. Essentially, you need a system that matches a text query with a set of products in your store. A good product search can understand user’s query in any language, retrieve as many relevant products as possible, and finally present the result as a list, in which the preferred products should be at the top, and the irrelevant products should be at the bottom.&lt;/p&gt;&lt;p&gt;Unlike text retrieval (e.g. Google web search), products are structured data. A product is often described by a list of key-value pairs, a set of pictures and some free text. In the developers’ world,
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Use &lt;code&gt;HParams&lt;/code&gt; and YAML to Better Manage Hyperparameters in Tensorflow</title>
+    <link href="https://hanxiao.github.io/2017/12/21/Use-HParams-and-YAML-to-Better-Manage-Hyperparameters-in-Tensorflow/"/>
+    <id>https://hanxiao.github.io/2017/12/21/Use-HParams-and-YAML-to-Better-Manage-Hyperparameters-in-Tensorflow/</id>
+    <published>2017-12-21T13:02:52.000Z</published>
+    <updated>2019-08-07T12:03:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background&quot;&gt;&lt;/a&gt;Background&lt;/h2&gt;&lt;p&gt;Building a machine learning system is an exploration-exploitation process. First, you explore some models, network architectures to check which one better fits the given problem. Once you have an idea, you concentrate on a particular model and exploit it by (manually/automatically) tuning its hyperparameters. Finally, the winner model with the best parameters will be deployed online to serve real customers. The whole process involves &lt;em&gt;repetitively&lt;/em&gt; switching between different contexts and environments: e.g. training, validating and testing; local and remote; CPU, GPU, multi-GPU. As a consequence, how to effectively manage the
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Optimizing Contrastive/Rank/Triplet Loss in Tensorflow for Neural Information Retrieval</title>
+    <link href="https://hanxiao.github.io/2017/11/08/Optimizing-Contrastive-Rank-Triplet-Loss-in-Tensorflow-for-Neural/"/>
+    <id>https://hanxiao.github.io/2017/11/08/Optimizing-Contrastive-Rank-Triplet-Loss-in-Tensorflow-for-Neural/</id>
+    <published>2017-11-08T12:38:12.000Z</published>
+    <updated>2019-08-07T12:03:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background&quot;&gt;&lt;/a&gt;Background&lt;/h2&gt;&lt;p&gt;Recently, my team is applying deep neural networks to improve the search experience of customers. Researchers often call this type of application &lt;em&gt;neural information retrieval&lt;/em&gt;. The input to the model is a full-text query and a set of documents. A search query typically contains a few terms, while a document, depending on the scenario, may
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Fashion-MNIST: a Drop-In Replacement of MNIST for Benchmarking Machine Learning Algorithms</title>
+    <link href="https://hanxiao.github.io/2017/08/26/Fashion-MNIST-a-Drop-In-Replacement-of-MNIST-for-Benchmarking-Machine-Learning-Algorithms/"/>
+    <id>https://hanxiao.github.io/2017/08/26/Fashion-MNIST-a-Drop-In-Replacement-of-MNIST-for-Benchmarking-Machine-Learning-Algorithms/</id>
+    <published>2017-08-26T10:28:50.000Z</published>
+    <updated>2019-08-07T12:03:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;TL-DR&quot;&gt;&lt;a href=&quot;#TL-DR&quot; class=&quot;headerlink&quot; title=&quot;TL;DR&quot;&gt;&lt;/a&gt;TL;DR&lt;/h2&gt;&lt;p&gt;The dataset is here: &lt;a href=&quot;https://github.com/zalandoresearch/fashion-mnist&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/zalandoresearch/fashion-mnist&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://research.zalando.com/welcome/team/han-xiao/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;I&lt;/a&gt; and my colleague &lt;a href=&quot;https://research.zalando.com/welcome/team/kashif-rasul/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Kashif Rasul&lt;/a&gt; create this image dataset as &lt;strong&gt;a drop-in replacement of MNIST&lt;/strong&gt; for benchmarking machine learning algorithms. The dataset is published under MIT License.&lt;/p&gt;&lt;p&gt;We would appreciate references to the following paper if you use this dataset in publications:&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;a href=&quot;arxiv.pdf&quot;&gt;Fashion-MNIST: a Novel Image Dataset for Benchmarking Machine Learning Algorithms.&lt;/a&gt; Han Xiao, Kashif Rasul, Roland Vollgraf. arXiv: cs.LG/1708.07747&lt;/p&gt;&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Why I Use &lt;code&gt;raw_rnn&lt;/code&gt; Instead of &lt;code&gt;dynamic_rnn&lt;/code&gt; in Tensorflow and So Should You</title>
+    <link href="https://hanxiao.github.io/2017/08/16/Why-I-use-raw-rnn-Instead-of-dynamic-rnn-in-Tensorflow-So-Should-You-0/"/>
+    <id>https://hanxiao.github.io/2017/08/16/Why-I-use-raw-rnn-Instead-of-dynamic-rnn-in-Tensorflow-So-Should-You-0/</id>
+    <published>2017-08-16T15:51:34.000Z</published>
+    <updated>2019-08-07T12:03:46.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background&quot;&gt;&lt;/a&gt;Background&lt;/h2&gt;&lt;p&gt;Recently I am working on search queries with Tensorflow. Given an arbitrary query, I am interested in two things: the probability of it and the vector representation of it. After a discussion with my team, I started with a simple generative neural network called &lt;a href=&quot;https://arxiv.org/pdf/1605.02226.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;em&gt;Neural Autoregressive Distribution Estimation&lt;/em&gt;&lt;/a&gt; (NADE), which is designed for modeling the distribution $p(\mathbf{x})$ of input vector $\mathbf{x}$. While I was implementing NADE using &lt;a href=&quot;https://www.tensorflow.org/api_docs/python/tf/nn/dynamic_rnn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;code&gt;dynamic_rnn&lt;/code&gt;&lt;/a&gt; Tensorflow API, I found it is kind of &lt;strong&gt;hacky especially for sampling&lt;/strong&gt;. Later, I resorted to a low-level API called &lt;code&gt;raw_rnn&lt;/code&gt;, which turns out to be more powerful for generative recurrent neural network.&lt;/p&gt;&lt;p&gt;In this article, I want to highlight the advantages of &lt;code&gt;raw_rnn&lt;/code&gt; over &lt;code&gt;dynamic_rnn&lt;/code&gt;. In particular, I will describe how to use this API to implement &lt;strong&gt;NADE&lt;/strong&gt; and &lt;strong&gt;a sequence-to-sequence model&lt;/strong&gt;. Although &lt;code&gt;raw_rnn&lt;/code&gt; is
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Get 10x Speedup in Tensorflow Multi-Task Learning using Python Multiprocessing</title>
+    <link href="https://hanxiao.github.io/2017/07/07/Get-10x-Speedup-in-Tensorflow-Multi-Task-Learning-using-Python-Multiprocessing/"/>
+    <id>https://hanxiao.github.io/2017/07/07/Get-10x-Speedup-in-Tensorflow-Multi-Task-Learning-using-Python-Multiprocessing/</id>
+    <published>2017-07-07T11:59:18.000Z</published>
+    <updated>2019-08-07T12:03:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background&quot;&gt;&lt;/a&gt;Background&lt;/h2&gt;&lt;p&gt;Recently I started to model user search queries using Tensorflow. After some discussion with my team, the original problem boils down to a set of classification tasks, where each task is a &lt;em&gt;multi-label&lt;/em&gt; classification problem. One interesting observation here is that the tasks are highly related: knowing the labels of one task could help one to guess the labels of another task. So perhaps it would be a good idea to train all those tasks in the same neural network simultaneously, hoping that the commonality across the tasks will be exploited during the learning and improve the final performance.&lt;/p&gt;&lt;p&gt;As the number of tasks increases, my training data becomes larger and larger. As a consequence, directly feeding such
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Extremely Stupid Mistakes I Made With Tensorflow and Python</title>
+    <link href="https://hanxiao.github.io/2017/05/19/Extremely-Stupid-Mistakes-I-made-with-Tensorflow-and-Python/"/>
+    <id>https://hanxiao.github.io/2017/05/19/Extremely-Stupid-Mistakes-I-made-with-Tensorflow-and-Python/</id>
+    <published>2017-05-19T11:48:46.000Z</published>
+    <updated>2019-08-07T12:03:45.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Background&quot;&gt;&lt;a href=&quot;#Background&quot; class=&quot;headerlink&quot; title=&quot;Background&quot;&gt;&lt;/a&gt;Background&lt;/h2&gt;&lt;p&gt;Recently I started with Tensorflow for developing some RNN-based system. I choose Python 3 as the main language since TF has most stable API support for it. Plus, I can quickly set up web services via Flask and uWSGI. Previously I had some experience with this technology stack (Python+Flask+uWSGI) in production and I want to make it better this time. Although Java + Spring or Scala + akka may be better options for building a more scalable web app, they are probably overkill in my project, at least for now.&lt;/p&gt;&lt;p&gt;Building a highly scalable and available deep learning system is a topic for another day, here I want to talk about
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
